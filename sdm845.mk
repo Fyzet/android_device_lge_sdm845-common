@@ -72,8 +72,7 @@ AB_OTA_PARTITIONS += \
     system \
     vendor \
     vbmeta \
-    dtbo \
-    product
+    dtbo
 
 AB_OTA_POSTINSTALL_CONFIG += \
     RUN_POSTINSTALL_system=true \
@@ -213,8 +212,8 @@ PRODUCT_PACKAGES += \
 
 # GPS
 PRODUCT_PACKAGES += \
-    android.hardware.gnss@2.0-impl-qti \
-    android.hardware.gnss@2.0-service-qti \
+    android.hardware.gnss@1.1-impl-qti \
+    android.hardware.gnss@1.1-service-qti \
     libgnss \
     libgnsspps
 
@@ -384,8 +383,8 @@ PRODUCT_PACKAGES += \
 #    vendor.lineage.touch@1.0-service.judy
 
 # Trust HAL
-PRODUCT_PACKAGES += \
-    vendor.lineage.trust@1.0-service
+#PRODUCT_PACKAGES += \
+#    vendor.lineage.trust@1.0-service
 
 # USB
 PRODUCT_PACKAGES += \
