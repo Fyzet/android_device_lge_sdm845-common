@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 on boot
     # LEDs
@@ -25,3 +26,9 @@ service vendor.light-hal-2-0 /vendor/bin/hw/android.hardware.light@2.0-service.l
     group system
     # shutting off lights while powering-off
     shutdown critical
+=======
+service vendor.light-hal-2-0 /vendor/bin/hw/android.hardware.light@2.0-service.lge_sdm845
+    class hal
+    user system
+    group system
+>>>>>>> 0d6edf6... sdm845-common: commonize light hal

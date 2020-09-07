@@ -253,7 +253,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(COMMON_PATH)/keylayout/gpio-keys.kl:$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/gpio-keys.kl
 
-# Light
+# Lights
 PRODUCT_PACKAGES += \
     android.hardware.light@2.0-service.lge_sdm845
 

@@ -23,7 +23,11 @@
 #include <mutex>
 #include <fstream>
 
+<<<<<<< HEAD
 #define BL              "/sys/class/leds/wled/"
+=======
+#define BL              "/sys/class/backlight/panel0-backlight/"
+>>>>>>> 0d6edf6... sdm845-common: commonize light hal
 
 #define BL_EX           "/sys/class/backlight/panel0-backlight-ex/"
 
