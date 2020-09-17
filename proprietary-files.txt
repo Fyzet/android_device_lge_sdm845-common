@@ -1025,7 +1025,6 @@ lib/libwfdavenhancements.so
 lib/libwfdclient.so
 lib/libwfdcommonutils.so
 lib/libwfdconfigutils.so
-lib/libwfdclient.so
 lib/libwfdmminterface.so
 lib/libwfdmmsink.so
 lib/libwfdmmsrc_system.so
@@ -1091,4 +1090,3 @@ vendor/lib/libwfduibcsrcinterface_proprietary.so
 vendor/lib/libwfduibcsrc_proprietary.so
 vendor/lib/vendor.qti.hardware.wifidisplaysession@1.0.so
 vendor/lib/vendor.qti.hardware.wifidisplaysessionl@1.0-halimpl.so
-

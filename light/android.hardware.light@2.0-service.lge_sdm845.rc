@@ -3,4 +3,7 @@ service vendor.light-hal-2-0 /vendor/bin/hw/android.hardware.light@2.0-service.l
     user system
     group system
     interface android.hardware.light@2.0::ILight default
+<<<<<<< HEAD
 
+=======
+>>>>>>> 35f6a20... Android 10 Blobs

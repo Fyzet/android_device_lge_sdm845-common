@@ -24,10 +24,14 @@
 #include <fstream>
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 #define BL              "/sys/class/leds/wled/"
 =======
 #define BL              "/sys/class/backlight/panel0-backlight/"
 >>>>>>> 0d6edf6... sdm845-common: commonize light hal
+=======
+#define BL              "/sys/class/backlight/panel0-backlight/"
+>>>>>>> 35f6a20... Android 10 Blobs
 
 #define BL_EX           "/sys/class/backlight/panel0-backlight-ex/"
 
