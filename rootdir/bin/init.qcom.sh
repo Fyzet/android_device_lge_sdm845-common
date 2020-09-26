@@ -567,30 +567,15 @@ if [ "$build_product" == "judyp" ] || [ "$build_product" == "judypn" ] || [ "$bu
         elif [ "$target_operator" = "TMO" ]; then
             cp --preserve=m -d /data/vendor/modem_config/mcfg_sw/dig_lge/st_tmo_u.dig /data/vendor/modem_config/mcfg_sw/mbn_sw.dig
             cp --preserve=m -d /data/vendor/modem_config/mcfg_sw/dig_lge/st_tmo_u.txt /data/vendor/modem_config/mcfg_sw/mbn_sw.txt
-        elif [ "$sku_carrier" == "GLOBAL" ]; then
-            cp --preserve=m -d /data/vendor/modem_config/mcfg_sw/dig_lge/storm_gl.dig /data/vendor/modem_config/mcfg_sw/mbn_sw.dig
-            cp --preserve=m -d /data/vendor/modem_config/mcfg_sw/dig_lge/storm_gl.txt /data/vendor/modem_config/mcfg_sw/mbn_sw.txt
-        elif [ "$target_country" == "MX" ] || [ "$target_country" == "PR" ] || [ "$target_country" == "SCA" ]; then
-            cp --preserve=m -d /data/vendor/modem_config/mcfg_sw/dig_lge/storm_gl.dig /data/vendor/modem_config/mcfg_sw/mbn_sw.dig
-            cp --preserve=m -d /data/vendor/modem_config/mcfg_sw/dig_lge/storm_gl.txt /data/vendor/modem_config/mcfg_sw/mbn_sw.txt
-        fi
-    elif [ "$product_name" = "judypn_lao_eea" ]; then
-	if [ "$sku_carrier" == "GLOBAL" ]; then
-            cp --preserve=m -d /data/vendor/modem_config/mcfg_sw/dig_lge/storm_gl.dig /data/vendor/modem_config/mcfg_sw/mbn_sw.dig
-            cp --preserve=m -d /data/vendor/modem_config/mcfg_sw/dig_lge/storm_gl.txt /data/vendor/modem_config/mcfg_sw/mbn_sw.txt
-        elif [ "$target_country" == "MX" ] || [ "$target_country" == "PR" ] || [ "$target_country" == "SCA" ]; then
-            cp --preserve=m -d /data/vendor/modem_config/mcfg_sw/dig_lge/storm_gl.dig /data/vendor/modem_config/mcfg_sw/mbn_sw.dig
-            cp --preserve=m -d /data/vendor/modem_config/mcfg_sw/dig_lge/storm_gl.txt /data/vendor/modem_config/mcfg_sw/mbn_sw.txt
-	fi
-    elif [ "$product_name" = "judyln_spr_us" ]; then
-        cp --preserve=m -d /data/vendor/modem_config/mcfg_sw/dig_lge/neo_spr_.dig /data/vendor/modem_config/mcfg_sw/mbn_sw.dig
-        cp --preserve=m -d /data/vendor/modem_config/mcfg_sw/dig_lge/neo_spr_.txt /data/vendor/modem_config/mcfg_sw/mbn_sw.txt
-    elif [ "$product_name" = "judyln_vzw" ]; then
-        cp --preserve=m -d /data/vendor/modem_config/mcfg_sw/dig_lge/neo_vzw.dig /data/vendor/modem_config/mcfg_sw/mbn_sw.dig
-        cp --preserve=m -d /data/vendor/modem_config/mcfg_sw/dig_lge/neo_vzw.txt /data/vendor/modem_config/mcfg_sw/mbn_sw.txt
-    elif [ "$product_name" = "style3lm_dcm_jp" ]; then
-        cp --preserve=m -d /data/vendor/modem_config/mcfg_sw/dig_lge/stl3_dcm.dig /data/vendor/modem_config/mcfg_sw/mbn_sw.dig
-        cp --preserve=m -d /data/vendor/modem_config/mcfg_sw/dig_lge/stl3_dcm.txt /data/vendor/modem_config/mcfg_sw/mbn_sw.txt
+   	elif [ "$product_name" = "judyln_spr_us" ]; then
+            cp --preserve=m -d /data/vendor/modem_config/mcfg_sw/dig_lge/neo_spr_.dig /data/vendor/modem_config/mcfg_sw/mbn_sw.dig
+            cp --preserve=m -d /data/vendor/modem_config/mcfg_sw/dig_lge/neo_spr_.txt /data/vendor/modem_config/mcfg_sw/mbn_sw.txt
+    	elif [ "$product_name" = "judyln_vzw" ]; then
+            cp --preserve=m -d /data/vendor/modem_config/mcfg_sw/dig_lge/neo_vzw.dig /data/vendor/modem_config/mcfg_sw/mbn_sw.dig
+            cp --preserve=m -d /data/vendor/modem_config/mcfg_sw/dig_lge/neo_vzw.txt /data/vendor/modem_config/mcfg_sw/mbn_sw.txt
+    	elif [ "$product_name" = "style3lm_dcm_jp" ]; then
+            cp --preserve=m -d /data/vendor/modem_config/mcfg_sw/dig_lge/stl3_dcm.dig /data/vendor/modem_config/mcfg_sw/mbn_sw.dig
+            cp --preserve=m -d /data/vendor/modem_config/mcfg_sw/dig_lge/stl3_dcm.txt /data/vendor/modem_config/mcfg_sw/mbn_sw.txt
     fi
 else
     if [ ! -f /vendor/firmware_mnt/verinfo/ver_info.txt -o "$prev_version_info" != "$cur_version_info" ]; then
